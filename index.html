@@ -3,10 +3,11 @@
 <head>
   <meta charset="UTF-8">
   <title>Nextark</title>
+
   <style>
     body {
       margin: 0;
-      min-height: 100vh;
+      height: 100vh;
       display: flex;
       justify-content: center;
       align-items: center;
@@ -14,52 +15,57 @@
       color: white;
       font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial;
       text-align: center;
+      overflow: hidden;
     }
 
     .container {
-      max-width: 900px;
+      max-width: 700px;
       padding: 40px;
-      backdrop-filter: blur(20px);
-      background: rgba(255, 255, 255, 0.06);
-      border-radius: 20px;
-      box-shadow: 0 20px 60px rgba(0,0,0,0.3);
     }
 
     img {
-      width: 120px;
-      margin-bottom: 20px;
+      width: 110px;
+      margin-bottom: 25px;
+      opacity: 0.95;
     }
 
     h1 {
-      font-size: 3.5em;
-      margin: 10px 0;
+      font-size: 3.8em;
+      margin: 0;
       letter-spacing: 2px;
     }
 
-    h2 {
-      font-size: 1.3em;
-      font-weight: 400;
-      color: #e5e5e5;
-      margin-bottom: 30px;
+    .coming {
+      margin-top: 10px;
+      font-size: 1em;
+      letter-spacing: 3px;
+      opacity: 0.7;
     }
 
     p {
-      font-size: 1.15em;
+      margin-top: 30px;
+      font-size: 1.2em;
       color: #e5e5e5;
-      line-height: 1.7;
-      margin-bottom: 20px;
+      line-height: 1.6;
     }
 
     .highlight {
-      margin-top: 25px;
-      font-size: 1.4em;
+      margin-top: 40px;
+      font-size: 1.5em;
       font-weight: bold;
-      color: white;
     }
 
-    a {
-      color: white;
-      text-decoration: underline;
+    .glow {
+      animation: glow 2s ease-in-out infinite alternate;
+    }
+
+    @keyframes glow {
+      from {
+        text-shadow: 0 0 10px rgba(255,255,255,0.3);
+      }
+      to {
+        text-shadow: 0 0 20px rgba(255,255,255,0.8);
+      }
     }
 
   </style>
@@ -70,26 +76,16 @@
 
     <img src="logo.png" alt="Nextark logo">
 
-    <h1>Nextark</h1>
-    <h2>🚧 Under Construction</h2>
+    <h1 class="glow">Nextark</h1>
+
+    <div class="coming">COMING SOON</div>
 
     <p>
-      Vi har lanserat NextArk – en plattform som guidar arkitekter till nästa steg i karriären.
-    </p>
-
-    <p>
-      I en tid av osäker marknad, hållbarhetskrav och snabb teknisk utveckling befinner sig många av oss i ett mellanrum.
-      NextArk samlar kostnadsfria utbildningar och resurser på ett ställe, så att du enkelt kan hitta rätt väg framåt – oavsett om du vill fördjupa dig inom hållbarhet, BIM eller vidareutbildning efter din examen.
-    </p>
-
-    <p>
-      Vår vision är att skapa lika möjligheter för alla arkitekter, oavsett bakgrund.
+      Vi bygger en plattform som guidar arkitekter till nästa steg i karriären.
     </p>
 
     <div class="highlight">
-      Upptäck vad som är Next för dig:
-      <br>
-      <a href="https://nextark.se/">nextark.se</a>
+      What is next for you?
     </div>
 
   </div>
